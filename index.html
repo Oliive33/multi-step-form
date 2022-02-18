@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Form step by step</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Création de compte</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+
+        <div
+          class="progress-step progress-step-active"
+          data-title="Intro"
+        ></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="Infos"></div>
+        <div class="progress-step" data-title="Mdp"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <div class="flex-compte">
+            <div class="flex-compte-items">
+              <h3>Civilité*</h3>
+              <input class="input-statut" type="radio" />
+              <span>Mme </span>
+            </div>
+            <div class="flex-compte-items">
+              <input class="input-statut" type="radio" />
+              <span>Mr </span>
+            </div>
+          </div>
+
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" />
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" />
+        </div>
+        <div class="input-group">
+          <label for="pseudo">Pseudo</label>
+          <input type="text" name="pseudo" id="pseudo" />
+        </div>
+        <div class="btns">
+          <a href="#" class="btn-form btn-next ml-auto">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Téléphone*</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email*</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div class="btns">
+          <a href="#" class="btn-form btn-prev">Précédent</a>
+          <a href="#" class="btn-form btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <div class="flex-compte flex-compte-info">
+            <h3>Compte*</h3>
+            <div class="flex-compte-items">
+              <input class="input-statut" type="radio" />
+              <span>Particulier </span>
+            </div>
+            <div class="flex-compte-items">
+              <input class="input-statut" type="radio" />
+              <span>Professionnel </span>
+            </div>
+          </div>
+          <label for="dob">Date de naissance</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+
+        <div class="btns">
+          <a href="#" class="btn-form btn-prev">Précédent</a>
+          <a href="#" class="btn-form btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Mot de passe*</label>
+          <input type="mdp" name="mdp" id="mdp" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirmation mot de passe*</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" />
+        </div>
+        <div class="btns">
+          <a href="#" class="btn-form btn-prev">Précédent</a>
+          <input type="submit" value="Créer mon compte" class="btn-form" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
