@@ -175,3 +175,8 @@ input {
 .btn-form:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
 }
+@media screen and (max-width: 450px) {
+  .form {
+    width: 100%;
+  }
+}
